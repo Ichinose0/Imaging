@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "imaging",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Imaging",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Ichinose0"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/imaging/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"io.github.ichinose.imaging.Imaging"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"io.github.ichinose.imaging.ImagingClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"imaging.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "imaging.client.mixins.json",
 			"environment": "client"
 		}
 	],
